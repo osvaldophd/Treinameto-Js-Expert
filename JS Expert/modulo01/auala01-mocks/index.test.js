@@ -1,16 +1,15 @@
-const Error = require('./src/constants')
-const File = require('./src/file')
-const assert = require('assert')
-//IFEE
+const ErrorContant = require('./src/constants');
+const File = require('./src/file');
+const assert = require('assert');
+
+// IIFE
 ;(async () => {
-  //variavel criada neste bloco só são valido neste bloco
+  // Variáveis criadas neste bloco só são válidas neste bloco
   {
-    const filePath = './mocks/emptyFile-invalid'
-    const expected = new Error(error.FILE_LENGTH_ERROR_MENSAGE)
+    const filePath = './mocks/emptyFile-invalid.csv'
+   const expected = new Error(ErrorContant.FILE_LENGTH_ERROR_MENSAGE)
     const result = File.csvToJson(filePath)
 
     await assert.rejects(result, expected);
-
   }
-
-});
+})()
