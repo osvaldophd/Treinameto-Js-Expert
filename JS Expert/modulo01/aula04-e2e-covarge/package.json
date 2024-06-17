@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/api.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/api.test.js"
   },
   "engines": {
     "node": "18"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }

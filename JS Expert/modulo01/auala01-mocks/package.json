@@ -1,0 +1,14 @@
+{
+  "name": "treinamento_js_expert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "author": "Osvaldo Avelino",
+  "license": "ISC"
+}
